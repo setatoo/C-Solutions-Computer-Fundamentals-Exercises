@@ -1,77 +1,46 @@
-# Fibotech
+## 1. فیبوتک (Fibotech)
 
-Mr. Golabi, a graduate in Industrial Engineering, has a strong interest in system optimization. Having recently become familiar with Fibonacci numbers (introduced by the Italian mathematician Fibonacci), he wants to estimate the complexity of task-related processes using Fibonacci numbers.
+**Time limit:** 1 second  
+**Memory limit:** 256 MB
 
-By definition, Fibonacci numbers form a sequence in which each term is equal to the sum of the two preceding terms, with the first and second terms both equal to one:
+Mr. Galbi, a graduate in industrial engineering, has a strong interest in system optimization. After becoming familiar with Fibonacci numbers (the Italian mathematician), he wants to estimate the complexity of tasks using Fibonacci numbers.
 
-Fib(1) = 1
-Fib(2) = 1
-Fib(n) = Fib(n−1) + Fib(n−2)
+By definition, Fibonacci numbers are a sequence where each term is the sum of the two preceding ones, with the first two terms both equal to 1.
 
-Sequence:
-1, 1, 2, 3, 5, 8, ...
-
-He asks you to write a program to help optimize processes as follows:
-
-At each step, find the largest Fibonacci number less than or equal to the current input value and subtract it from the input.  
-Repeat this process until the input value is completely decomposed into Fibonacci components.  
-Finally, print all the Fibonacci components in descending order (from largest to smallest).
-
----
-
-## Input
-
-The input consists of a single natural number `n`.
-
-1 ≤ n ≤ 10,000,000
-
-
----
-
-## Output
-
-Print all Fibonacci components in descending order, one per line.
-
----
-
-## Example 1
+He has asked you to write a program that helps him in process optimization: find the **largest Fibonacci number ≤ input**, subtract it from the input, and repeat this process until the input is completely decomposed into Fibonacci numbers. Finally, print all these Fibonacci parts **from largest to smallest**.
 
 ### Input
-12
+- A single natural number
 
 ### Output
+- Print all Fibonacci components in descending order (largest to smallest)
+
+**Fibonacci definition:**
+Fib(1) = 1, Fib(2) = 1
+Fib(n) = Fib(n−1) + Fib(n−2)    for n > 2
+Sequence: 1, 1, 2, 3, 5, 8, 13, 21, ...
+text**Constraints:**
+1 ≤ n ≤ 10,000,000
+text### Sample Input 1
+12
+text### Sample Output 1
 8
 3
 1
+text**Explanation:**
+- Step 1: largest Fib ≤ 12 is **8** → 12−8 = 4
+- Step 2: largest Fib ≤ 4 is **3** → 4−3 = 1
+- Step 3: largest Fib ≤ 1 is **1**
 
-### Explanation
-- Step 1: The largest Fibonacci number ≤ 12 is 8  
-- Step 2: For 4 = 12 − 8, the next component is 3  
-- Step 3: For 1 = 4 − 3, the remaining component is 1
-
----
-
-## Example 2
-
-### Input
+### Sample Input 2
 50
-
-
-### Output
+text### Sample Output 2
 34
 13
 3
-
-
----
-
-## Example 3
-
-### Input
+text### Sample Input 3
 4765854
-
-
-### Output
+text### Sample Output 3
 3524578
 832040
 317811
