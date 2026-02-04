@@ -4,7 +4,6 @@
 
 using namespace std;
 
-//unsigned fibo(long long unsigned n);/*chon chand ta chap bayad anjam mishod time limit mikhrd*/
 
 int main()
 {
