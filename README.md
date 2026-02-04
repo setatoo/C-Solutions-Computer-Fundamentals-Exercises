@@ -26,7 +26,7 @@ This repository does NOT contain official solutions or copyrighted course conten
 ## 🛠️ Language & Tools
 - C++
 - Standard Library (STL)
-  ## 👤 Author
+## 👤 Author
 Taha Toliati  
 Robotics Programmer | RoboCup Coach  
 Focused on robotics simulation, algorithms, and applied programming.
